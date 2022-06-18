@@ -10,7 +10,7 @@ const BookList = () => {
   const { title, author } = bookProps;
 
   return (
-    <div>
+    <div className='action'>
       <h3>Actions</h3>
       <h1>{title}</h1>
       <p>{author}</p>
