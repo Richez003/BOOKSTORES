@@ -13,6 +13,7 @@ const AddBooks = () => (
       placeholder="Author"
       className="author"
     />
+    <button className="addbtn" type="button">Add</button>
   </div>
 );
 export default AddBooks;
