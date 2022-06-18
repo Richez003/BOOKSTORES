@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class Header extends React.PureComponent {
   render() {
     return (
-      <div>
+      <div className="head">
         <h1>Bookstore CMS</h1>
         <nav>
           <Link to="/">Book</Link>

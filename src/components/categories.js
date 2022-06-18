@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Category = () => (
-  <div>
-    <button type="button">Check Status</button>
+  <div className="buttonDiv">
+    <button className="catbtn" type="button">Check Status</button>
   </div>
 );
 

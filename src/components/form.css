@@ -1,0 +1,13 @@
+.form {
+  padding-top: 1rem;
+  row-gap: 10px;
+}
+
+.author {
+  padding: 8px;
+}
+
+.title {
+  padding: 8px;
+  width: 500px;
+}

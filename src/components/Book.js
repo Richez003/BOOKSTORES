@@ -10,12 +10,11 @@ const BookList = () => {
   const { title, author } = bookProps;
 
   return (
-    <div className='action'>
+    <div className="action">
       <h3>Actions</h3>
-      <h1>{title}</h1>
+      <h2>{title}</h2>
       <p>{author}</p>
-      <button type="button">Remove</button>
-
+      <button className="remove" type="button">Remove</button>
       <AddBooks />
     </div>
   );
