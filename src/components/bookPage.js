@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './header';
 import Category from './categories';
 import './header.css';
-import './form.css';
 import './category.css';
 import Book from './book';
 
