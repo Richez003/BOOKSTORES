@@ -4,7 +4,7 @@ import Header from './header';
 import Category from './categories';
 import './header.css';
 import './category.css';
-import Book from './book';
+import Books from './Book';
 
 class HomePage extends React.PureComponent {
   constructor(props) {
@@ -18,7 +18,7 @@ class HomePage extends React.PureComponent {
         <Router>
           <Header />
           <Routes>
-            <Route path="/" element={<Book />} />
+            <Route path="/" element={<Books />} />
             <Route path="/categories" element={<Category />} />
           </Routes>
         </Router>

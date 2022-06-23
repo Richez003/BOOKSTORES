@@ -2,7 +2,7 @@ import React from 'react';
 import AddBooks from './addBooks';
 import BookList from './BookList';
 
-const Book = () => (
+const Books = () => (
   <main className="book-list-container">
     <section className="book-list">
       <BookList
@@ -25,4 +25,4 @@ const Book = () => (
   </main>
 );
 
-export default Book;
+export default Books;
