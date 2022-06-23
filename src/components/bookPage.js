@@ -1,12 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import BookList from './Book';
 import Header from './header';
 import Category from './categories';
 import './header.css';
-import './book.css';
 import './form.css';
 import './category.css';
+import Book from './book';
 
 class HomePage extends React.PureComponent {
   constructor(props) {
@@ -20,7 +19,7 @@ class HomePage extends React.PureComponent {
         <Router>
           <Header />
           <Routes>
-            <Route path="/" element={<BookList />} />
+            <Route path="/" element={<Book />} />
             <Route path="/categories" element={<Category />} />
           </Routes>
         </Router>

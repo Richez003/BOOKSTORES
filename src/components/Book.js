@@ -1,22 +1,28 @@
 import React from 'react';
-import AddBooks from './form';
+import AddBooks from './addBooks';
+import BookList from './BookList';
 
-const BookList = () => {
-  const bookProps = {
-    title: 'Dune',
-    author: 'Frank Herbert',
-  };
+const Book = () => (
+  <main className="book-list-container">
+    <section className="book-list">
+      <BookList
+        title="The Hunger Games"
+        author="Suzane Colins"
+        categories="Action"
+      />
+      <BookList
+        title="Dune"
+        author="Frank Herbert"
+        categories="Science Fiction"
+      />
+      <BookList
+        title="Lady in Red"
+        author="Phil Colins"
+        categories="Entertainment"
+      />
+    </section>
+    <AddBooks />
+  </main>
+);
 
-  const { title, author } = bookProps;
-
-  return (
-    <div className="action">
-      <h3>Actions</h3>
-      <h2>{title}</h2>
-      <p>{author}</p>
-      <button className="remove" type="button">Remove</button>
-      <AddBooks />
-    </div>
-  );
-};
-export default BookList;
+export default Book;
