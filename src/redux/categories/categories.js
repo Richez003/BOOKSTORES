@@ -1,9 +1,13 @@
-const CHECK_STATUS = 'bookStore/categories/CHECK_STATUS';
-const initialState = { categories: [], showState: false };
+import { v4 as uuidv4 } from 'uuid';
 
-export const checkStatus = () => ({
+const CHECK_STATUS = 'bookStore/categories/CHECK_STATUS';
+const initialState = { categories: [], showState: false, id: uuidv4() };
+
+export const checkStatus = (id) => ({
   type: CHECK_STATUS,
   showState: false,
+  id,
+
 });
 
 const checkReducer = (state = initialState, action) => {
