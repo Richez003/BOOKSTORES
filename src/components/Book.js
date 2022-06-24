@@ -1,19 +1,29 @@
 import React from 'react';
-import AddBooks from './addBooks';
-import './Book.css';
+import { useSelector } from 'react-redux';
 import BookList from './BookList';
+import AddBooks from './addBooks';
 
-const Book = () => (
-  <main className="book-list-container">
-    <section className="book-list">
-      <BookList
-        title="The Hunger Games"
-        author="Suzane Colins"
-        categories="Action"
-      />
-    </section>
-    <AddBooks />
-  </main>
-);
+const Books = () => {
+  const bookItems = useSelector((state) => state.booksReducer);
 
-export default Book;
+  return (
+    <main className="book-list-container">
+      <section className="book-list">
+        {
+          bookItems.map((book) => (
+            <BookList
+              key={book.id}
+              id={book.id}
+              title={book.title}
+              author={book.author}
+              categories={book.category}
+            />
+          ))
+        }
+      </section>
+      <AddBooks />
+    </main>
+  );
+};
+
+export default Books;
