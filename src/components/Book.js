@@ -1,8 +1,9 @@
 import React from 'react';
 import AddBooks from './addBooks';
+import './Book.css';
 import BookList from './BookList';
 
-const Books = () => (
+const Book = () => (
   <main className="book-list-container">
     <section className="book-list">
       <BookList
@@ -10,19 +11,9 @@ const Books = () => (
         author="Suzane Colins"
         categories="Action"
       />
-      <BookList
-        title="Dune"
-        author="Frank Herbert"
-        categories="Science Fiction"
-      />
-      <BookList
-        title="Lady in Red"
-        author="Phil Colins"
-        categories="Entertainment"
-      />
     </section>
     <AddBooks />
   </main>
 );
 
-export default Books;
+export default Book;

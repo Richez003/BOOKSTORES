@@ -1,6 +1,27 @@
+import { v4 as uuidv4 } from 'uuid';
+
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
-const initialState = [];
+const initialState = [
+  {
+    id: uuidv4(),
+    title: 'Whales',
+    author: 'Daniel Rage',
+    category: 'Animes',
+  },
+  {
+    id: uuidv4(),
+    title: 'Unbeatable',
+    author: 'Tiger Hood',
+    category: 'Sports',
+  },
+  {
+    id: uuidv4(),
+    title: 'Within is The Source',
+    author: 'Phil Colins',
+    category: 'Music',
+  },
+];
 
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {
