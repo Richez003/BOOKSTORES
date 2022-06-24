@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import HomePage from './components/homePage';
+import { Provider } from 'react-redux';
+import store from './redux/configureStore';
+import HomePage from './components/bookPage';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HomePage />
+    <Provider store={store}>
+      <HomePage />
+    </Provider>
   </React.StrictMode>,
 );
 
