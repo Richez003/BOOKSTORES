@@ -4,7 +4,7 @@ import Header from './header';
 import Category from './categories';
 import './header.css';
 import './category.css';
-import Books from './book';
+import Books from './Book';
 
 class HomePage extends React.PureComponent {
   constructor(props) {
