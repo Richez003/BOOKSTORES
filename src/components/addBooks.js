@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux/es/exports';
-import { addBook } from '../redux/books/books';
+import { postBooks } from '../redux/books/books';
 
 const AddBooks = () => {
   const initialState = {
@@ -32,8 +32,19 @@ const AddBooks = () => {
       category: inputState.category,
     };
 
-    dispatch(addBook(newBook));
+    dispatch(postBooks(newBook));
   };
+
+  const categoryItems = [
+    'Fantasy',
+    'Anime',
+    'Adult Movie',
+    'Education',
+    'Entertainment',
+    'Sport',
+    'Sci-Fi',
+    'Indigeneous',
+  ];
 
   return (
     <form onSubmit={submitBook} className="input-book-container">
@@ -44,9 +55,10 @@ const AddBooks = () => {
         <div className="form-wrapper">
           <select name="category" id="categories" onChange={handleChange} required>
             <option value="Undefine">Select a category</option>
-            <option value="Category 1">Category 1</option>
-            <option value="Category 2">Category 2</option>
-            <option value="Category 3">Category 3</option>
+            {categoryItems.map((category) => (
+              <option key={category} value={category}>{category}</option>
+            ))}
+
           </select>
           <button type="submit" id="add-btn" onClick={submitBook}>ADD BOOK</button>
         </div>
