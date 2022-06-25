@@ -50,7 +50,7 @@ const AddBooks = () => {
     <form onSubmit={submitBook} className="input-book-container">
       <h1>Add New Book</h1>
       <div className="book-input">
-        <input type="text" placeholder="Book Title" name="title" onChange={handleChange} required />
+        <input type="text" placeholder="Book Title" name="title" id="booktile" onChange={handleChange} required />
         <input type="text" placeholder="Book Author" name="author" onChange={handleChange} required />
         <div className="form-wrapper">
           <select name="category" id="categories" onChange={handleChange} required>
