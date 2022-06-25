@@ -1,35 +1,41 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import user from '../assets/image/user.svg';
 
-class Header extends React.PureComponent {
-  render() {
-    return (
-      <div className="head">
-        <h1>Bookstore CMS</h1>
-        <nav>
-          <Link to="/">Book</Link>
-          <Link to="/categories">Categories</Link>
-        </nav>
-      </div>
-    );
-  }
-}
+const Header = () => (
+  <nav>
+    <ul>
+      <li>
+        <NavLink className="logo" to="/">
+          Bookstore CMS
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          className={({ isActive }) => (isActive ? 'active' : '')}
+          to="/"
+        >
+          BOOKS
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          className={({ isActive }) => (isActive ? 'active' : '')}
+          to="/Categories"
+        >
+          CATEGORIES
+        </NavLink>
+      </li>
+    </ul>
+    <NavLink
+      className={({ isActive }) => (isActive ? 'active' : '')}
+      to="/bookstore"
+    >
+      <figure>
+        <img className="user-icon" alt="User settings" src={user} />
+      </figure>
+    </NavLink>
+  </nav>
+);
 
 export default Header;
-
-//  class Navigate extends React.PureComponent {
-//     render() {
-//       return (
-//         <header className="head">
-//           <h1>Math Magician</h1>
-//           <nav>
-//             <Link to="/">HomePage|</Link>
-//             <Link to="/calculator">Calculator</Link>
-//             <Link to="/quote">|Quotes</Link>
-//           </nav>
-//         </header>
-
-//       );
-//     }
-//   }
-//   export default Navigate;

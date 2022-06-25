@@ -4,6 +4,8 @@ import Header from './header';
 import Category from './categories';
 import './header.css';
 import './category.css';
+import './addBook.css';
+import './Booklist.css';
 import Books from './Book';
 
 class HomePage extends React.PureComponent {

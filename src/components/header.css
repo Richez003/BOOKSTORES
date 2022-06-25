@@ -1,20 +1,65 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  color: black;
-}
-
-.head {
-  display: flex;
-  padding: 20px;
-  gap: 1rem;
-  padding-inline: 5%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto+Slab:wght@100&display=swap');
 
 nav {
-  margin-top: 10px;
+  width: 100%;
+  padding: 1rem 2rem;
   display: flex;
+  gap: 3rem;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: montserrat, sans-serif;
+  border-bottom: 2px solid #eee;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  font-weight: bold;
+  gap: 3rem;
+}
+
+ul li a {
   text-decoration: none;
-  gap: 1rem;
+  color: #bbb;
+  outline: none;
+}
+
+ul li a:hover {
+  color: orangered;
+}
+
+.logo {
+  color: #0290ff !important;
+  text-align: center;
+  display: flex;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.logo:hover {
+  color: orangered !important;
+}
+
+nav figure {
+  width: 1.5rem;
+  padding: 0.5rem;
+  border: solid 1px #0290ff;
+  border-radius: 50%;
+  text-align: center;
+}
+
+nav figure:hover {
+  cursor: pointer;
+  color: orangered !important;
+}
+
+.user-icon {
+  width: 80%;
+}
+
+.active {
+  color: #000;
 }
