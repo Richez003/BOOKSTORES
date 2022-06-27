@@ -9,7 +9,7 @@
 - React
 
 ## Live
-
+[preview](https://deploy-preview-6--symphonious-churros-74444f.netlify.app/)
 
 
 ## Install
