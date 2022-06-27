@@ -8,6 +8,9 @@
 - Redux
 - React
 
+
+## Live
+[preview](https://deploy-preview-6--symphonious-churros-74444f.netlify.app/)
 ## Install
 
 To get a local copy up and running follow these simple example steps.
