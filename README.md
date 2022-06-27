@@ -13,7 +13,7 @@
 To get a local copy up and running follow these simple example steps.
 - Copy this link
   ```
-  https://github.com/Richez003/BOOKSTORES/pull/1
+  https://github.com/Richez003/BOOKSTORES
 - Open the terminal
 - Run "git clone" and paste the link
 - Install dependencies using `npm install` and start live server `npm start`

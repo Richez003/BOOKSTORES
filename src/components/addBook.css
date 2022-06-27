@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto+Slab:wght@100&display=swap');
+
+.input-book-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-top: solid 1px #ddd;
+  padding-top: 1rem;
+  margin: 1rem auto;
+  font-family: Montserrat, sans-serif;
+}
+
+.input-book-container h1 {
+  font-size: 2rem;
+  color: #555;
+}
+
+.book-input {
+  display: flex;
+  gap: 0.25rem 1rem;
+}
+
+.book-input input,
+.book-input select {
+  background-color: #fff;
+  color: #444;
+  padding: 1rem;
+  border: 1px solid #bbb;
+  outline: none;
+}
+
+#booktile {
+  width: 500px;
+  font-size: 1rem;
+}
+
+.book-input #book_author {
+  width: 40%;
+  font-size: 1rem;
+}
+
+.form_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_wrapper select {
+  width: 65%;
+  font-size: 1rem;
+}
+
+.form_wrapper button {
+  width: 30%;
+  font-size: 1rem;
+}
+
+.book-input .form_wrapper {
+  width: 30%;
+}
+
+::placeholder {
+  color: grey;
+}
+
+#add-btn {
+  background-color: #0290ff;
+  color: #fff;
+  font-size: 1rem;
+  padding: 13px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.add-btn:hover {
+  background-color: #72bfff;
+  color: #fff;
+}
+
+.add-btn:active {
+  background-color: #00325b;
+  color: #fff;
+}

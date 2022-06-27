@@ -9,16 +9,6 @@ const Books = () => {
   return (
     <main className="book-list-container">
       <section className="book-list">
-        <BookList
-          title="The Hunger Games"
-          author="Suzane Colins"
-          categories="Action"
-        />
-        <BookList
-          title="Dune"
-          author="Frank Herbert"
-          categories="Science Fiction"
-        />
         {
           bookItems.map((book) => (
             <BookList
