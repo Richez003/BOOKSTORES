@@ -1,5 +1,4 @@
 # Project - Bookstores
-<p align="center"><img src="./preview/laptop.png"></p>
 
 ## Built With
 
